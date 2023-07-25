@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de corte</title>
+</head>
+<body>
+
+    <form class="formulario" id="form_calc">
+        <h4>Tamaño del pliego</h4>
+        <input type="text" id="papel_ancho" placeholder="Ancho del pliego" value="100">
+        <input type="text" id="papel_largo" placeholder="Largo del pliego" value="110">
+        <h4>Medidas de corte</h4>
+        <input type="text" id="corte_ancho" placeholder="Ancho del corte" value="30">
+        <input type="text" id="corte_largo" placeholder="Largo del corte" value="20">
+        <input type="text" id="cortes_deseados" placeholder="Número de cortes deseados">
+    </form>
+
+    
+    
+    <input type="button" value="Máximo" id="maximo">
+    <input type="button" value="Horizontal" id="orientacion_h">
+    <input type="button" value="Vertical" id="orientacion_v">
+    <input type="button" value="Reset" id="reset">
+    <canvas id="canvas"></canvas>
+
+    <h4>Resultados</h4>
+    <p class="success">Ejemplares por pliego: <span id="cortes_pliego">0</span></p>
+    <p class="success">Horizontales: <span id="numero_cortes_horizontal">0</span></p>
+    <p class="success">Verticales: <span id="numero_cortes_vertical">0</span></p>
+    <p class="success">Total pliegos: <span id="pliegos">0</span></p>
+    <p class="success">Total ejemplares: <span id="numero_cortes">0</span></p>
+    <p class="success">% Utilizado: <span id="area_utilizada">0</span></p>
+    <p class="warning">% Sin utilizar: <span id="area_inutilizada">0</span></p>
+
+    <script src="index.js"></script>
+</body>
+</html>
